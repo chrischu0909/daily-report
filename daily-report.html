@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>合庫投信每日金融市場快訊</title>
+  <style>
+    body { font-family: Arial, sans-serif; line-height: 1.6; margin: 20px; color: #333; background-color: #f9f9f9; }
+    header { text-align: center; margin-bottom: 20px; }
+    header h1 { font-size: 2em; color: #005BAC; margin: 0; }
+    .data-table { width: 100%; border-collapse: collapse; margin-bottom: 20px; }
+    .data-table th, .data-table td { border: 1px solid #ddd; padding: 8px; text-align: center; }
+    section { background: #fff; padding: 20px; border-radius: 8px; box-shadow: 0 2px 6px rgba(0,0,0,0.1); margin-bottom: 20px; }
+    section h2 { font-size: 1.4em; margin-bottom: 10px; color: #005BAC; }
+    .content p { margin: 10px 0; }
+    .content ul { padding-left: 1.5em; margin: 0; }
+    .content li { margin-bottom: 8px; }
+    footer { text-align: center; font-size: 0.9em; color: #777; margin-top: 30px; }
+    @media (max-width: 600px) {
+      body { margin: 10px; }
+      header h1 { font-size: 1.6em; }
+      section { padding: 15px; }
+      .data-table th, .data-table td { padding: 6px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>合庫投信每日金融市場快訊｜<span id="report-date"></span></h1>
+  </header>
+
+  <script>
+    // 動態設定標題日期為電腦當地日期 YYYY/MM/DD
+    const today = new Date();
+    const yyyy = today.getFullYear();
+    const mm = String(today.getMonth() + 1).padStart(2, '0');
+    const dd = String(today.getDate()).padStart(2, '0');
+    document.getElementById('report-date').textContent = `${yyyy}/${mm}/${dd}`;
+    document.title = `合庫投信每日金融市場快訊｜${yyyy}/${mm}/${dd}`;
+  </script>
+
+  <section>
+    <h2>📊 指數漲跌數據（交易日：05/29）</h2>
+    <div class="content">
+      <table class="data-table">
+        <thead>
+          <tr><th>指數</th><th>漲跌點數</th><th>漲跌幅(%)</th><th>收盤價</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>道瓊</td><td>+117.03</td><td>0.28%</td><td>42215.73</td></tr>
+          <tr><td>S&amp;P 500</td><td>+23.62</td><td>0.40%</td><td>5912.17</td></tr>
+          <tr><td>那斯達克</td><td>+74.93</td><td>0.39%</td><td>19175.87</td></tr>
+          <tr><td>費城半導體</td><td>+26.06</td><td>0.54%</td><td>4860.48</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <section>
+    <h2>📉 股市表現（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29美股週四收盤小幅走高，輝達強勁財報年增69%帶動AI板塊，但關稅訴訟不確定性抑制整體漲幅。</p>
+      <ul>
+        <li>📌 標普500上漲0.40%，收5912.17點；</li>
+        <li>📌 那斯達克上漲0.39%，收19175.87點；</li>
+        <li>📌 道瓊上漲0.28%，收42215.73點；</li>
+        <li>📌 費半指數上漲0.54%，收4860.48點。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔺 債市殖利率動態（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29美債殖利率下滑，因初領失業金人數高於預期，市場預期聯準會或提前降息。</p>
+      <ul>
+        <li>📌 30年期由4.977%降至4.922%；</li>
+        <li>📌 10年期由4.48%降至4.438%；</li>
+        <li>📌 2年期由3.995%降至3.945%；</li>
+        <li>📌 短年期美元高收益債與特別股殖利率維持高檔，逢低承接熱度不減。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>💵 美元動態（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29美元指數下跌0.5%，收99.35，因關稅政策訴訟持續增加市場不確定性。</p>
+      <ul>
+        <li>📌 訴訟初裁越權徵稅，後被暫緩執行，拖累美元；</li>
+        <li>📌 高盛認為雖訴訟挫敗計畫，但政府或另尋途徑；</li>
+        <li>📌 勞動力數據走弱亦加劇美元承壓。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🛢️ 能源動態（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29原油回吐早盤漲幅，WTI下跌1.5%至60.94美元、布蘭特下跌1.2%至64.15美元。</p>
+      <ul>
+        <li>📌 關稅不確定與OPEC+產量會議談判互相牽制；</li>
+        <li>📌 俄羅斯與伊朗局勢、委內瑞拉制裁均為供應風險。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🪙 貴金屬動態（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29黃金震盪走高，期貨3294.60美元，現貨3319.22美元，上漲0.9%，避險需求升溫。</p>
+      <ul>
+        <li>📌 初領失業金攀升推動降息預期；</li>
+        <li>📌 法院訴訟不確定性增加避險吸引力。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🇹🇼 台灣股市重點動態（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29台股因MSCI調整與外資賣超206億元夾擊，小幅下跌0.05%，收於21347.30點。</p>
+      <ul>
+        <li>📌 外資賣超206.66億元；</li>
+        <li>📌 投信買超78.24億元，自營商買超60.83億元；</li>
+        <li>📌 電子弱勢，金融、生技抗跌。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🏮 港股動態（交易日：05/29）</h2>
+    <div class="content">
+      <p>5/29恆生指數上漲1.35%，收23573.38點，受惠關稅初裁利多與輝達財報提振科技板塊。</p>
+      <ul>
+        <li>📌 初裁被視為打擊保護主義提振樂觀；</li>
+        <li>📌 AI板塊支撐市場情緒。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>🔍 專家觀點整理</h2>
+    <div class="content">
+      <ul>
+        <li>📌 Edward Jones：收益率回落短期支撐股市；</li>
+        <li>📌 Moody’s：通膨下行仍關注消費者支出；</li>
+        <li>📌 Yardeni：MSCI調整後台股或有回檔壓力。</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>📊 投資建議與結語</h2>
+    <div class="content">
+      <ul>
+        <li>🔸 市場總結：輝達財報與關稅訴訟為核心驅動；</li>
+        <li>🔸 短期策略：逢低承接短年期美元高收益債及金融特別股；</li>
+        <li>🔸 長期策略：定期定額布局AI與優質大型股，分批增配特別股；</li>
+        <li>🔸 未來觀察：關稅訴訟進展、PCE公布、OPEC+會議動向。</li>
+      </ul>
+      <p>如需協助檢視配置與調整建議，歡迎聯繫合庫投信專人服務。</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>【合庫投信 關心您的投資未來】</p>
+  </footer>
+</body>
+</html>
